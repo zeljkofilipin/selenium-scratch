@@ -1,0 +1,69 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 0,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 2,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[964, 100, [["hide"], ["wait:elapsed:from:", 1]]],
+				[964, 10, [["whenIReceive", "message1"], ["doIf", false, null]]],
+				[26,
+					28,
+					[["whenGreenFlag"],
+						["show"],
+						["gotoX:y:", 0, 0],
+						["say:duration:elapsed:from:", "It looks like you're trying to debug.", 2],
+						["doAsk", "Would you like help?"],
+						["doIf", ["=", ["answer"], "yes"], [["doAsk", "How can I help you?"]]],
+						["doIf",
+							["=", ["answer"], "no"],
+							[["say:duration:elapsed:from:", "Have a nice day!", 2], ["doAsk", "Show this tip again?"]]]]]],
+			"costumes": [{
+					"costumeName": "clippy",
+					"baseLayerID": 1,
+					"baseLayerMD5": "df2a71e50762ea896d589c7267881cc2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 65,
+					"rotationCenterY": 106
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 0.8,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "148695263",
+		"hasCloudData": false,
+		"scriptCount": 2,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.110 Safari\/537.36",
+		"swfVersion": "v454",
+		"spriteCount": 1,
+		"flashVersion": "MAC 25,0,0,127",
+		"videoOn": false
+	}
+}
