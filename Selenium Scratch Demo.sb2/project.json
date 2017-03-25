@@ -1,0 +1,267 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "firefox",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "chrome",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "google",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "wikipedia",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "name",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "title",
+			"value": "Scratch ❤️  Selenium - Google Search",
+			"isPersistent": false
+		},
+		{
+			"name": "selenium",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 2,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "empty",
+			"baseLayerID": 3,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "firefox",
+			"baseLayerID": 4,
+			"baseLayerMD5": "760a86361f52bbfaf29c04abd5804ad4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "google",
+			"baseLayerID": 5,
+			"baseLayerMD5": "7cd21505f25db46fb0f45bb3c1fb21eb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "search",
+			"baseLayerID": 6,
+			"baseLayerMD5": "312f19ddd6fe010f5ece95ee22fbd891.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "search-results",
+			"baseLayerID": 7,
+			"baseLayerMD5": "483dd4433c52ff3c58c59ef6b606725a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[29,
+					8,
+					[["whenGreenFlag"],
+						["gotoX:y:", -150, -50],
+						["startScene", "empty"],
+						["say:duration:elapsed:from:", "Opening Firefox", 1],
+						["startScene", "firefox"],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "Opening Google", 1],
+						["startScene", "google"],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "Entering text: Scratch ❤️  Selenium", 2],
+						["startScene", "search"],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "Clicking search button", 1],
+						["playSound:", "click"],
+						["wait:elapsed:from:", 1],
+						["startScene", "search-results"],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "Checking if the correct page opens", 2],
+						["say:duration:elapsed:from:", "Closing Firefox", 1],
+						["startScene", "empty"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": 0,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "click",
+					"soundID": 1,
+					"md5": "c2ff5da4d9d85dee866615f672b749ce.wav",
+					"sampleCount": 15360,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": 2,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -150,
+			"scratchY": -50,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "firefox",
+			"color": 15629590,
+			"label": "firefox",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "chrome",
+			"color": 15629590,
+			"label": "chrome",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "google",
+			"color": 15629590,
+			"label": "google",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "wikipedia",
+			"color": 15629590,
+			"label": "wikipedia",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "name",
+			"color": 15629590,
+			"label": "name",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 113,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "title",
+			"color": 15629590,
+			"label": "title",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 140,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "selenium",
+			"color": 15629590,
+			"label": "selenium",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 167,
+			"visible": false
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v454",
+		"videoOn": false,
+		"projectID": "148654788",
+		"flashVersion": "MAC 25,0,0,127",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.110 Safari\/537.36",
+		"scriptCount": 1
+	}
+}
