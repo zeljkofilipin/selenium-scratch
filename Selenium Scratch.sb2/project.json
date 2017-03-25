@@ -1,0 +1,223 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "firefox",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "chrome",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "google",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "wikipedia",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "name",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "title",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "selenium",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": 1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 2,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": 0,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[18,
+					8,
+					[["whenGreenFlag"],
+						["call", "require %s", ["readVariable", "selenium"]],
+						["call", "open %s", ["readVariable", "firefox"]],
+						["call", "open %s", ["readVariable", "google"]],
+						["call", "find %b", ["=", ["readVariable", "name"], "q"]],
+						["say:", "Scratch ❤️  Selenium"],
+						["call", "find %b", ["=", ["readVariable", "name"], "btnG"]],
+						["playSound:", "click"],
+						["doWaitUntil", ["=", ["readVariable", "title"], "Scratch ❤️  Selenium - Google Search"]],
+						["call", "close %s", ["readVariable", "firefox"]]]],
+				[39.8, 513.9, [["procDef", "close %s", ["string1"], [""], false]]],
+				[219.85, 523.5, [["procDef", "require %s", ["string1"], [""], false]]],
+				[51.4, 443.35, [["procDef", "find %b", ["boolean1"], [false], false]]],
+				[233.2, 439, [["procDef", "open %s", ["string1"], [""], false]]]],
+			"scriptComments": [[137, 21, 180, 41, false, 0, "when the script is started"],
+				[142, 49, 194, 45, false, 1, "require Selenium bindings"],
+				[117, 75, 112, 45, false, 3, "open Firefox"],
+				[119, 101, 108, 50, false, 5, "open Google"],
+				[154, 129.5, 190, 49, false, 7, "find element with name q"],
+				[157, 156, 171, 43, false, 10, "send text to the element"],
+				[167, 182.5, 212, 43, false, 11, "find element with name btnG"],
+				[139, 209, 138, 41, false, 14, "click the element"],
+				[330, 235.5, 254, 36, false, 15, "wait until page title matches the string"],
+				[118, 264, 100, 35, false, 18, "close Firefox"]],
+			"sounds": [{
+					"soundName": "click",
+					"soundID": 0,
+					"md5": "c2ff5da4d9d85dee866615f672b749ce.wav",
+					"sampleCount": 15360,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "firefox",
+			"color": 15629590,
+			"label": "firefox",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "chrome",
+			"color": 15629590,
+			"label": "chrome",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "google",
+			"color": 15629590,
+			"label": "google",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "wikipedia",
+			"color": 15629590,
+			"label": "wikipedia",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "name",
+			"color": 15629590,
+			"label": "name",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 113,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "title",
+			"color": 15629590,
+			"label": "title",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 140,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "selenium",
+			"color": 15629590,
+			"label": "selenium",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 167,
+			"visible": false
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v454",
+		"videoOn": false,
+		"projectID": "148651313",
+		"flashVersion": "MAC 25,0,0,127",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.110 Safari\/537.36",
+		"scriptCount": 5
+	}
+}
