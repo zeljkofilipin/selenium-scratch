@@ -24,6 +24,12 @@ Selenium bindings in Scratch, visual programming language for kids
 
 # Links
 
-- Selenium Scratch: [Scratch](https://scratch.mit.edu/projects/148651313/)
-- Selenium Scratch Demo: [Scratch](https://scratch.mit.edu/projects/148654788/), [YouTube](https://youtu.be/pNJSSDt5RPI)
-- Selenium Scratch Debug: [Scratch](https://scratch.mit.edu/projects/148695263/), [YouTube](https://youtu.be/i-g6fwYlFW4)
+Selenium Scratch: [Scratch](https://scratch.mit.edu/projects/148651313/)
+
+Selenium Scratch Demo: [Scratch](https://scratch.mit.edu/projects/148654788/), [YouTube](https://youtu.be/pNJSSDt5RPI)
+
+[![Selenium Scratch Demo](http://img.youtube.com/vi/pNJSSDt5RPI/0.jpg)](http://www.youtube.com/watch?v=pNJSSDt5RPI "Selenium Scratch Demo")
+
+Selenium Scratch Debug: [Scratch](https://scratch.mit.edu/projects/148695263/), [YouTube](https://youtu.be/i-g6fwYlFW4)
+
+[![Selenium Scratch Debug](http://img.youtube.com/vi/i-g6fwYlFW4/0.jpg)](http://www.youtube.com/watch?v=i-g6fwYlFW4 "Selenium Scratch Debug")
